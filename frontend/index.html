@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kira AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: #020617;
+      overflow: hidden;
+    }
+
+    /* ---- Animated gradient blobs ---- */
+    .blob {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.35;
+      animation: float 18s ease-in-out infinite;
+    }
+
+    .blob1 {
+      background: #6366f1;
+      top: -120px;
+      left: -120px;
+    }
+
+    .blob2 {
+      background: #22d3ee;
+      bottom: -120px;
+      right: -120px;
+      animation-delay: 6s;
+    }
+
+    .blob3 {
+      background: #a855f7;
+      top: 40%;
+      left: 60%;
+      animation-delay: 12s;
+    }
+
+    @keyframes float {
+      0%   { transform: translate(0,0) scale(1); }
+      50%  { transform: translate(40px,-30px) scale(1.1); }
+      100% { transform: translate(0,0) scale(1); }
+    }
+
+    /* Glass panels */
+    .glass {
+      backdrop-filter: blur(14px);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(#6366f1,#22d3ee);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+<!-- Background blobs -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<!-- App container -->
+<div class="relative z-10 flex h-screen">
+
+  <!-- Sidebar -->
+  <div class="w-64 glass border-r border-white/10 p-3 space-y-2 overflow-y-auto">
+    <button onclick="newChat()"
+      class="w-full bg-indigo-600 rounded p-2 font-semibold mb-3">
+      + New Chat
+    </button>
+
+    <h2 class="font-bold mb-2 text-sm text-zinc-400">History</h2>
+    <div id="history"></div>
+  </div>
+
+  <!-- Main Chat -->
+  <div class="flex-1 flex flex-col max-w-4xl mx-auto p-4">
+
+    <h1 class="text-2xl font-bold mb-3 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+      Kira AI
+    </h1>
+
+    <div id="chat"
+      class="flex-1 overflow-y-auto space-y-3 glass rounded-xl p-4">
+    </div>
+
+    <div class="flex mt-3 gap-2">
+      <input id="input"
+        class="flex-1 glass p-3 rounded outline-none placeholder-zinc-400 focus:ring-2 focus:ring-indigo-500"
+        placeholder="Ask Kira..."
+        onkeydown="if(event.key==='Enter') send()"
+      />
+      <button onclick="send()"
+        class="bg-gradient-to-r from-indigo-500 to-cyan-500 px-5 rounded font-semibold hover:opacity-90 transition">
+        Send
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

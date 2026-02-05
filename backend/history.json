@@ -1,0 +1,47 @@
+[
+  {
+    "user": "hello",
+    "ai": "hello",
+    "time": "2026-02-04T20:33:05.762129"
+  },
+  {
+    "user": "who is elon musk",
+    "ai": "Elon Musk is a business magnate, entrepreneur, and investor. He is the CEO and lead designer of SpaceX, as well as the CEO and product architect of Tesla, Inc. Musk is known for his ambitious goals, such as reducing global warming through sustainable energy and making humanity a multi-planetary species.",
+    "time": "2026-02-04T20:33:15.813307"
+  },
+  {
+    "user": "who is Darshan?",
+    "ai": "Darshan (Kannada actor) An Indian actor, producer, and distributor who works predominantly in Kannada films.\nDarshan (Indian religions) The auspicious sight of a deity or a holy person.\nDarshan (Tamil actor) An Indian actor who appears in Tamil language films.",
+    "time": "2026-02-04T20:35:08.397676"
+  },
+  {
+    "user": "what is AI",
+    "ai": "Artificial Intelligence (AI) refers to the development of computer systems that can perform tasks that would typically require human intelligence, such as learning, problem-solving, decision-making, and perception.",
+    "time": "2026-02-04T20:37:44.227588"
+  },
+  {
+    "user": "hello",
+    "ai": "hello",
+    "time": "2026-02-04T20:42:21.115457"
+  },
+  {
+    "user": "hello",
+    "ai": "hello",
+    "time": "2026-02-04T20:44:29.584121"
+  },
+  {
+    "user": "hello",
+    "ai": "hello",
+    "time": "2026-02-04T20:47:25.501824"
+  },
+  {
+    "user": "what is your name",
+    "ai": "I'm an AI assistant, and I don't have a personal name. I'm here to help answer your questions and provide information.",
+    "time": "2026-02-04T20:47:42.287643"
+  },
+  {
+    "user": "who created you ?",
+    "ai": "Meta AI developed me, and I'm constantly learning and improving my responses based on the data I receive.",
+    "time": "2026-02-04T20:48:51.844708"
+  }
+]

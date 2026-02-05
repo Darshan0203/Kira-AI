@@ -1,0 +1,37 @@
+[
+  {
+    "goal": "say date",
+    "answer": "Saturday, 24 January 2026",
+    "timestamp": "2026-01-24T14:26:22.889524"
+  },
+  {
+    "goal": "say time",
+    "answer": "The current date and time is Saturday, 24 January 2026.",
+    "timestamp": "2026-01-24T14:27:39.017253"
+  },
+  {
+    "goal": "say time\\",
+    "answer": "The current time is Saturday, 24 January 2026 14:30:07.",
+    "timestamp": "2026-01-24T14:30:07.307215"
+  },
+  {
+    "goal": "say time",
+    "answer": "The current time is Saturday, 24 January 2026.",
+    "timestamp": "2026-01-24T14:32:30.857921"
+  },
+  {
+    "goal": "say time",
+    "answer": "The current time is Jan 33:05, however, this appears to be an invalid time format as January only has 31 days. A correct time format would typically be presented as month/day/hour/minute/second.",
+    "timestamp": "2026-01-24T14:33:06.391516"
+  },
+  {
+    "goal": "say time",
+    "answer": "14:33:36",
+    "timestamp": "2026-01-24T14:33:37.313805"
+  },
+  {
+    "goal": "say time",
+    "answer": "02:50 PM",
+    "timestamp": "2026-01-24T14:50:32.961542"
+  }
+]
