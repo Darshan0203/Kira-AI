@@ -1,7 +1,6 @@
 openai
 python-dotenv
-speechrecognition
-pyaudio
-pyttsx3
 requests
 pydantic
+fastapi
+uvicorn
